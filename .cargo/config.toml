@@ -3,7 +3,7 @@ runner = "arm-none-eabi-gdb"
 rustflags = [
     "-C", "link-arg=-Tlink.x",
     "-C", "link-arg=-Tmemory.x",
-    "-C", "link-arg=-Tbootloader.x",
+    "-C", "link-arg=-Tlinker/common.x",
 ]
 
 [build]
